@@ -21,6 +21,7 @@ jobs:
   foundation:
     needs: shared-feed
     strategy:
+      fail-fast: false
       matrix:
         os: [ubuntu-24.04, windows-latest]
     runs-on: ${{ matrix.os }}

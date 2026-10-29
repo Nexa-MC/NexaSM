@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Kill only our probe handle at admission checkpoints; inspect recovery in a new connection."""
+from contextlib import closing
 import json
 from pathlib import Path
 import sqlite3
@@ -37,7 +38,7 @@ def run_checkpoint(binary, point):
             process.communicate(timeout=5)
 
         # Reopening also performs SQLite journal recovery. Verify no partial transaction survived.
-        with sqlite3.connect(database) as db:
+        with closing(sqlite3.connect(database)) as db:
             counts = tuple(db.execute('SELECT COUNT(*) FROM ' + table).fetchone()[0]
                            for table in ('operations', 'outbox'))
             state = db.execute('SELECT desired, version, generation FROM instances').fetchone()
@@ -50,7 +51,7 @@ def run_checkpoint(binary, point):
         receipt = json.loads(resumed.stdout)
         if committed and receipt['OperationId']['Value'] != original_id:
             raise AssertionError('Durable operation was replayed')
-        with sqlite3.connect(database) as db:
+        with closing(sqlite3.connect(database)) as db:
             if db.execute('SELECT COUNT(*) FROM operations').fetchone()[0] != 1:
                 raise AssertionError('Retry did not converge to one operation')
             if db.execute('SELECT COUNT(*) FROM outbox').fetchone()[0] != 1:
