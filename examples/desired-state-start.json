@@ -1,0 +1,12 @@
+{
+  "CommandId": "8cd688c4-e3ea-498b-a42b-9adf4b647e06",
+  "IdempotencyKey": "example-start-1",
+  "Target": {
+    "Value": "b15d0ce8-f87d-40a2-9609-b19802b84965"
+  },
+  "ExpectedVersion": {
+    "Value": 0
+  },
+  "DesiredState": "Running",
+  "SchemaVersion": 1
+}

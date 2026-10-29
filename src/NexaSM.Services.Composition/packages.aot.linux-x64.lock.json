@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0": {
+      "Microsoft.DotNet.ILCompiler": {
+        "type": "Direct",
+        "requested": "[10.0.14, )",
+        "resolved": "10.0.14",
+        "contentHash": "CDQ/+XRT1JT/0u87j9exR1AociehKUzxae4KCOWxCQ1PIKbYS0F8ovxaCrqRlkylGmbhywKxV/zbbrEhWa5NXg=="
+      },
+      "Microsoft.NET.ILLink.Tasks": {
+        "type": "Direct",
+        "requested": "[10.0.14, )",
+        "resolved": "10.0.14",
+        "contentHash": "YlTamXppEQls6DYWt7RdUuwWDb0lyw/vXCaGeQpLCpsLmfwGuCkOz/vIGgMTV7ECsJcavkCOkxZXv9s8rdAHkQ=="
+      },
+      "Nexa.Xsr.Runtime": {
+        "type": "Direct",
+        "requested": "[0.1.0-alpha.1, 0.1.0-alpha.1]",
+        "resolved": "0.1.0-alpha.1",
+        "contentHash": "gU8PBH27okMIpjwrnVmEd+4V7mgwkuwlT8lsFXCGaRUmVurJgkKsMEgdAfFmfOHcXFXJhUh1huKx9FymbysIQg==",
+        "dependencies": {
+          "Nexa.Contracts": "[0.1.0-alpha.1]",
+          "Nexa.Core": "[0.1.0-alpha.1]",
+          "Nexa.Sidecar.Protocol": "[0.1.0-alpha.1]",
+          "Nexa.Sidecar.Transport": "[0.1.0-alpha.1]",
+          "Nexa.Xsr.Abstractions": "[0.1.0-alpha.1]",
+          "Nexa.Xsr.Diagnostics": "[0.1.0-alpha.1]",
+          "Nexa.Xsr.State": "[0.1.0-alpha.1]"
+        }
+      },
+      "Nexa.Contracts": {
+        "type": "Transitive",
+        "resolved": "0.1.0-alpha.1",
+        "contentHash": "VVwJLDmIsnQKRY+xZmYucpksssexPx+g6pX+Fkb8Pbp49Ohsd3BtGJ8xe3d4bNJXO5DwDHYNLXP/zlE16Pyeng==",
+        "dependencies": {
+          "Nexa.Core": "[0.1.0-alpha.1]"
+        }
+      },
+      "Nexa.Core": {
+        "type": "Transitive",
+        "resolved": "0.1.0-alpha.1",
+        "contentHash": "ny3Eyvh9oRA7WtEgCG0uRqczvXvdNn7Jrv7fqzedzeYapQmQSm176teR2WXqI3T8B6mbhbgCSvzhHjfwVIhUDA=="
+      },
+      "Nexa.Sidecar.Protocol": {
+        "type": "Transitive",
+        "resolved": "0.1.0-alpha.1",
+        "contentHash": "lIngZxhGxDqpbSDb/yK2ZhXj7ha+wZv3tg0U/+1kxlUhX9FOoTBf/uP8BQibFvdfkL15/M1BVbKxpGtP+Ah8rg==",
+        "dependencies": {
+          "Nexa.Core": "[0.1.0-alpha.1]"
+        }
+      },
+      "Nexa.Sidecar.Transport": {
+        "type": "Transitive",
+        "resolved": "0.1.0-alpha.1",
+        "contentHash": "3Vb+ikk187M+SSU/KhbQYR7h67UTT1IlXLlf8m022v+6TAqVUpCTCIQYY8DDE4S64525yfBh2Daoryk02ivD4g==",
+        "dependencies": {
+          "Nexa.Sidecar.Protocol": "[0.1.0-alpha.1]"
+        }
+      },
+      "Nexa.Xsr.Abstractions": {
+        "type": "Transitive",
+        "resolved": "0.1.0-alpha.1",
+        "contentHash": "WxqVTm+RQWZ4/QGkRApTDY28phtYIGovmWYInvJzDU5s5JjnWa8B4iuHWvevdEXSGVtMRvQbj+ppf/D+V60eKA==",
+        "dependencies": {
+          "Nexa.Contracts": "[0.1.0-alpha.1]",
+          "Nexa.Core": "[0.1.0-alpha.1]"
+        }
+      },
+      "Nexa.Xsr.Diagnostics": {
+        "type": "Transitive",
+        "resolved": "0.1.0-alpha.1",
+        "contentHash": "y/iSp2S1TYGFh6pQWOJGqM2zWUjjTWSj3ICkTxX78a1cuoPbwj1z4HZQc5sLf7Ipu71Lm4EhAPpk9pi0SMnPiA==",
+        "dependencies": {
+          "Nexa.Core": "[0.1.0-alpha.1]",
+          "Nexa.Xsr.Abstractions": "[0.1.0-alpha.1]"
+        }
+      },
+      "Nexa.Xsr.State": {
+        "type": "Transitive",
+        "resolved": "0.1.0-alpha.1",
+        "contentHash": "plf11s6ZR20qkp+M31ppxWiTH1pQwt5ZhrM2sN0LtsUdGZSJuUrOnqwvOgPHOTb1pfzHqCZmNKYg3pDtioIXig==",
+        "dependencies": {
+          "Nexa.Core": "[0.1.0-alpha.1]",
+          "Nexa.Xsr.Abstractions": "[0.1.0-alpha.1]"
+        }
+      },
+      "nexasm.contracts": {
+        "type": "Project",
+        "dependencies": {
+          "NexaSM.Domain": "[1.0.0, )"
+        }
+      },
+      "nexasm.domain": {
+        "type": "Project"
+      },
+      "nexasm.services": {
+        "type": "Project",
+        "dependencies": {
+          "NexaSM.Contracts": "[1.0.0, )",
+          "NexaSM.Domain": "[1.0.0, )"
+        }
+      }
+    },
+    "net10.0/linux-x64": {
+      "Microsoft.DotNet.ILCompiler": {
+        "type": "Direct",
+        "requested": "[10.0.14, )",
+        "resolved": "10.0.14",
+        "contentHash": "CDQ/+XRT1JT/0u87j9exR1AociehKUzxae4KCOWxCQ1PIKbYS0F8ovxaCrqRlkylGmbhywKxV/zbbrEhWa5NXg==",
+        "dependencies": {
+          "runtime.linux-x64.Microsoft.DotNet.ILCompiler": "10.0.14"
+        }
+      },
+      "runtime.linux-x64.Microsoft.DotNet.ILCompiler": {
+        "type": "Transitive",
+        "resolved": "10.0.14",
+        "contentHash": "RbHp9HXSvTnYCy1X8LUQmL0LcW++jP8Crqvt6ZjSH2MXqJ7w3FBHS9sUf1iFuCD6ztYdAQNd/QgMpDGZE/aRIA=="
+      }
+    }
+  }
+}

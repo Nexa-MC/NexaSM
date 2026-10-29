@@ -1,0 +1,35 @@
+{
+  "src/NexaSM.Domain": [],
+  "src/NexaSM.Contracts": [
+    "src/NexaSM.Domain"
+  ],
+  "src/NexaSM.Services": [
+    "src/NexaSM.Domain",
+    "src/NexaSM.Contracts"
+  ],
+  "src/NexaSM.Persistence.Sqlite": [
+    "src/NexaSM.Domain",
+    "src/NexaSM.Contracts",
+    "src/NexaSM.Services"
+  ],
+  "tools/M0Probe": [
+    "src/NexaSM.Domain",
+    "src/NexaSM.Contracts",
+    "src/NexaSM.Services",
+    "src/NexaSM.Persistence.Sqlite",
+    "src/NexaSM.Services.Composition"
+  ],
+  "tools/TestProcess": [],
+  "tests/NexaSM.Tests": [
+    "src/NexaSM.Domain",
+    "src/NexaSM.Contracts",
+    "src/NexaSM.Services",
+    "src/NexaSM.Persistence.Sqlite",
+    "src/NexaSM.Services.Composition"
+  ],
+  "src/NexaSM.Services.Composition": [
+    "src/NexaSM.Domain",
+    "src/NexaSM.Contracts",
+    "src/NexaSM.Services"
+  ]
+}

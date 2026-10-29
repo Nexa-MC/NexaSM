@@ -1,0 +1,50 @@
+name: M0 foundation
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  shared-feed:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python eng/prepare_xsr.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pinned-xsr-feed
+          path: artifacts/xsr-feed
+  foundation:
+    needs: shared-feed
+    strategy:
+      matrix:
+        os: [ubuntu-24.04, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: pinned-xsr-feed
+          path: artifacts/xsr-feed
+      - if: runner.os != 'Linux'
+        run: python eng/verify.py
+      - if: runner.os == 'Linux'
+        run: python eng/verify.py --aot
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: m0-results-${{ matrix.os }}
+          path: |
+            tests/**/TestResults/*.trx
+            artifacts/response-*.json
+            artifacts/response-*.log

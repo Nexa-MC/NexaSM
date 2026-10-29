@@ -1,0 +1,199 @@
+{
+  "repository": "https://github.com/Nexa-MC/NexaCL",
+  "branch": "main",
+  "commit": "2ecadffb74f40c07a674a7f72cefaa50d0dd1c0b",
+  "sdk": "10.0.403",
+  "closures": {
+    "Nexa.Xsr.Runtime": [
+      "Nexa.Contracts",
+      "Nexa.Core",
+      "Nexa.Sidecar.Protocol",
+      "Nexa.Sidecar.Transport",
+      "Nexa.Xsr.Abstractions",
+      "Nexa.Xsr.Diagnostics",
+      "Nexa.Xsr.Runtime",
+      "Nexa.Xsr.State"
+    ],
+    "Nexa.Xsr.Renderer.Nxml.Runtime": [
+      "Nexa.Contracts",
+      "Nexa.Core",
+      "Nexa.Xsr.Abstractions",
+      "Nexa.Xsr.Renderer",
+      "Nexa.Xsr.Renderer.Nxml.Compiler",
+      "Nexa.Xsr.Renderer.Nxml.Runtime",
+      "Nexa.Xsr.State"
+    ],
+    "Nexa.Platform.Runtime": [
+      "Nexa.Contracts",
+      "Nexa.Core",
+      "Nexa.Domain",
+      "Nexa.Platform.Abstractions",
+      "Nexa.Platform.Runtime",
+      "Nexa.Services.Capabilities.Contracts",
+      "Nexa.Services.Common",
+      "Nexa.Services.Common.Contracts",
+      "Nexa.Services.Minecraft.Assets.Contracts",
+      "Nexa.Services.Minecraft.Crash.Contracts",
+      "Nexa.Services.Minecraft.Downloads.Contracts",
+      "Nexa.Services.Minecraft.Install.Contracts",
+      "Nexa.Services.Minecraft.Java.Contracts",
+      "Nexa.Services.Minecraft.Launch.Contracts",
+      "Nexa.Services.Minecraft.Library.Contracts",
+      "Nexa.Services.Minecraft.Metadata",
+      "Nexa.Services.Minecraft.Process.Contracts",
+      "Nexa.Services.Recovery.Storage",
+      "Nexa.Xsr.Abstractions",
+      "Nexa.Xsr.State"
+    ]
+  },
+  "experiment_version": "2.0.0-smprobe.2ecadffb",
+  "published": false,
+  "packages": [
+    {
+      "file": "Nexa.Contracts.2.0.0-smprobe.2ecadffb.nupkg",
+      "sha256": "b7fb94c34b7240eb78e6d86deccdf60f927025eb12651f939aa3de8755a2134b",
+      "dependencies": [
+        {
+          "id": "Nexa.Core",
+          "version": "2.0.0-smprobe.2ecadffb",
+          "exclude": "Build,Analyzers"
+        }
+      ],
+      "catalogs": []
+    },
+    {
+      "file": "Nexa.Core.2.0.0-smprobe.2ecadffb.nupkg",
+      "sha256": "9d96e29be9b5b50c8dee07ac96aa025cd565117c0c6bd7428e3d875bf8b26f5d",
+      "dependencies": [],
+      "catalogs": []
+    },
+    {
+      "file": "Nexa.Sidecar.Protocol.2.0.0-smprobe.2ecadffb.nupkg",
+      "sha256": "6040e914ed67162dc0e3612bf2fba7656fe241aa350db82970e22bdc2c577679",
+      "dependencies": [
+        {
+          "id": "Nexa.Core",
+          "version": "2.0.0-smprobe.2ecadffb",
+          "exclude": "Build,Analyzers"
+        }
+      ],
+      "catalogs": []
+    },
+    {
+      "file": "Nexa.Sidecar.Transport.2.0.0-smprobe.2ecadffb.nupkg",
+      "sha256": "408eadcfe595fef89b3bc4aafacbaf49c9b1d49930eab3ff5fec03dbf7d06762",
+      "dependencies": [
+        {
+          "id": "Nexa.Sidecar.Protocol",
+          "version": "2.0.0-smprobe.2ecadffb",
+          "exclude": "Build,Analyzers"
+        }
+      ],
+      "catalogs": []
+    },
+    {
+      "file": "Nexa.Xsr.Abstractions.2.0.0-smprobe.2ecadffb.nupkg",
+      "sha256": "0d1b60c40d5e7f34c02efb35a77a5432aa6efd6f40f650fc139b7f555dcd3c01",
+      "dependencies": [
+        {
+          "id": "Nexa.Contracts",
+          "version": "2.0.0-smprobe.2ecadffb",
+          "exclude": "Build,Analyzers"
+        },
+        {
+          "id": "Nexa.Core",
+          "version": "2.0.0-smprobe.2ecadffb",
+          "exclude": "Build,Analyzers"
+        }
+      ],
+      "catalogs": []
+    },
+    {
+      "file": "Nexa.Xsr.Diagnostics.2.0.0-smprobe.2ecadffb.nupkg",
+      "sha256": "14ac44ac550b4d0918bef1642fb252fe98cf52d01c8bc9d4f47bceebdc938379",
+      "dependencies": [
+        {
+          "id": "Nexa.Core",
+          "version": "2.0.0-smprobe.2ecadffb",
+          "exclude": "Build,Analyzers"
+        },
+        {
+          "id": "Nexa.Xsr.Abstractions",
+          "version": "2.0.0-smprobe.2ecadffb",
+          "exclude": "Build,Analyzers"
+        }
+      ],
+      "catalogs": []
+    },
+    {
+      "file": "Nexa.Xsr.Runtime.2.0.0-smprobe.2ecadffb.nupkg",
+      "sha256": "1d98ab9fedc8ca001791391c67e5a77e6c1dfa41bc9c239579c4f332c9c56566",
+      "dependencies": [
+        {
+          "id": "Nexa.Contracts",
+          "version": "2.0.0-smprobe.2ecadffb",
+          "exclude": "Build,Analyzers"
+        },
+        {
+          "id": "Nexa.Core",
+          "version": "2.0.0-smprobe.2ecadffb",
+          "exclude": "Build,Analyzers"
+        },
+        {
+          "id": "Nexa.Sidecar.Protocol",
+          "version": "2.0.0-smprobe.2ecadffb",
+          "exclude": "Build,Analyzers"
+        },
+        {
+          "id": "Nexa.Sidecar.Transport",
+          "version": "2.0.0-smprobe.2ecadffb",
+          "exclude": "Build,Analyzers"
+        },
+        {
+          "id": "Nexa.Xsr.Abstractions",
+          "version": "2.0.0-smprobe.2ecadffb",
+          "exclude": "Build,Analyzers"
+        },
+        {
+          "id": "Nexa.Xsr.Diagnostics",
+          "version": "2.0.0-smprobe.2ecadffb",
+          "exclude": "Build,Analyzers"
+        },
+        {
+          "id": "Nexa.Xsr.State",
+          "version": "2.0.0-smprobe.2ecadffb",
+          "exclude": "Build,Analyzers"
+        }
+      ],
+      "catalogs": []
+    },
+    {
+      "file": "Nexa.Xsr.State.2.0.0-smprobe.2ecadffb.nupkg",
+      "sha256": "72eed9890c2b68f1305b60bea7adeb0667cea97f9c8b25f881e8987d6ce3a2f7",
+      "dependencies": [
+        {
+          "id": "Nexa.Core",
+          "version": "2.0.0-smprobe.2ecadffb",
+          "exclude": "Build,Analyzers"
+        },
+        {
+          "id": "Nexa.Xsr.Abstractions",
+          "version": "2.0.0-smprobe.2ecadffb",
+          "exclude": "Build,Analyzers"
+        }
+      ],
+      "catalogs": []
+    }
+  ],
+  "validation": {
+    "upstream_runtime": {
+      "passed": 183,
+      "skipped": 0
+    },
+    "package_consumer_managed": "passed",
+    "package_consumer_linux_x64_aot": "passed",
+    "renderer_runtime": "not run",
+    "windows": "not run",
+    "automatic_patching_in_package_consumer": "not validated"
+  }
+}

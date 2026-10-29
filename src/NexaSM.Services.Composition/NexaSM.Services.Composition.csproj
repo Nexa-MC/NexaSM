@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><IsAotCompatible>true</IsAotCompatible></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../NexaSM.Domain/NexaSM.Domain.csproj" />
+    <ProjectReference Include="../NexaSM.Contracts/NexaSM.Contracts.csproj" />
+    <ProjectReference Include="../NexaSM.Services/NexaSM.Services.csproj" />
+    <PackageReference Include="Nexa.Xsr.Runtime" Version="[0.1.0-alpha.1]" />
+  </ItemGroup>
+</Project>

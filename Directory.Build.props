@@ -1,0 +1,7 @@
+<Project><PropertyGroup>
+<TargetFramework>net10.0</TargetFramework><Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings>
+<TreatWarningsAsErrors>true</TreatWarningsAsErrors><Deterministic>true</Deterministic>
+<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile><IsPackable>false</IsPackable>
+<NuGetLockFilePath Condition="'$(PublishAot)' == 'true'">$(MSBuildProjectDirectory)/packages.aot.$(RuntimeIdentifier).lock.json</NuGetLockFilePath></PropertyGroup><Target Name="RequireAotRuntimeIdentifier" BeforeTargets="Restore" Condition="'$(PublishAot)' == 'true' and '$(RuntimeIdentifier)' == ''">
+<Error Text="AOT restore requires -p:RuntimeIdentifier=linux-x64 to select a named dependency lock." />
+</Target></Project>

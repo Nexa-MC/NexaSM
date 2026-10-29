@@ -3,3 +3,10 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+
+**/bin/
+**/obj/
+artifacts/
+TestResults/
+__pycache__/
+*.pyc

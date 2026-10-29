@@ -1,0 +1,12 @@
+{
+  "CommandId": "0b365a50-05b2-44a9-80e5-62084186c29f",
+  "IdempotencyKey": "example-stop-1",
+  "Target": {
+    "Value": "b15d0ce8-f87d-40a2-9609-b19802b84965"
+  },
+  "ExpectedVersion": {
+    "Value": 1
+  },
+  "DesiredState": "Stopped",
+  "SchemaVersion": 1
+}

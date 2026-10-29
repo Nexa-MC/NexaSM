@@ -1,0 +1,44 @@
+{
+  "repository": "https://github.com/Nexa-MC/NexaCL.git",
+  "commit": "6d5d74c281079ff0b15d28e3f210bec2bef63619",
+  "version": "0.1.0-alpha.1",
+  "sdk": "10.0.403",
+  "packages": [
+    {
+      "file": "Nexa.Core.0.1.0-alpha.1.nupkg",
+      "sha256": "46ad3aaf29d6be1cde9cfe92552310efd9fa59ec6ce7531a38a092d625da2e1d"
+    },
+    {
+      "file": "Nexa.Contracts.0.1.0-alpha.1.nupkg",
+      "sha256": "3449ff46344643d6dc0636a8f6e640d2599a781b4a0483f811a7b78ae1b5c448"
+    },
+    {
+      "file": "Nexa.Sidecar.Protocol.0.1.0-alpha.1.nupkg",
+      "sha256": "d971692bf1192b315ebe9ea895317000ca55597234dbcba2c3365432d38a574f"
+    },
+    {
+      "file": "Nexa.Sidecar.Transport.0.1.0-alpha.1.nupkg",
+      "sha256": "3debbbf9a8936f9337df35c1cefd8cbf1de0c63d615b5a102df1237ac5f14291"
+    },
+    {
+      "file": "Nexa.Xsr.Abstractions.0.1.0-alpha.1.nupkg",
+      "sha256": "b574bf9dab1b11b5a42556b86f2cb310d55ab7d8ea451828f19d772a631f2cfa"
+    },
+    {
+      "file": "Nexa.Xsr.Diagnostics.0.1.0-alpha.1.nupkg",
+      "sha256": "39253f3ef41f34483d295a3df8bbb999f6101ca74d7c40987c60b1a9031b1633"
+    },
+    {
+      "file": "Nexa.Xsr.State.0.1.0-alpha.1.nupkg",
+      "sha256": "417f1639e8439e42d0d9551bae79ac3d331d8f4305f78ba2c31796b8f4c3dac8"
+    },
+    {
+      "file": "Nexa.Xsr.Runtime.0.1.0-alpha.1.nupkg",
+      "sha256": "576759b190a6c8d04fc15957b16e250679a5c5baf8f39eefb5d8af94d74d1652"
+    },
+    {
+      "file": "Nexa.Xsr.BuildTools.0.1.0-alpha.1.nupkg",
+      "sha256": "fc6c14d2427bdcce3a7b8f8ef4b98fc50d4fdcd5f3716b6161e8c9df76a1f40e"
+    }
+  ]
+}
