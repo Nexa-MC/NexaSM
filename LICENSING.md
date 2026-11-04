@@ -1,23 +1,51 @@
-# 许可说明
+# Licensing
 
-许可方／著作权主体：木雪1230。Nexa-MC 是仓库所在的 GitHub 组织标识，不作为本许可的权利主体。
+English | [简体中文](LICENSING.zh-CN.md)
 
-## BUSL-1.1 范围与使用
+Licensor and copyright holder: **MUXUE1230**. Nexa-MC identifies the GitHub
+organization hosting the repository; it is not the rights holder under this license.
+
+## BUSL-1.1 scope and use
 
 NexaSM project-owned content, excluding third-party content.
 
-上述内容适用 [Business Source License 1.1](LICENSE)（SPDX：`BUSL-1.1`）。转换前属于源码可用许可，不能因源码公开就视为已按开源许可发布。BUSL 标准正文保留；额外生产使用权限由参数区 Additional Use Grant 规定。
+This content is licensed under [Business Source License 1.1](LICENSE)
+(SPDX: `BUSL-1.1`). Before conversion, this is a source-available license;
+public source availability does not make it an open-source license. The
+standard BUSL terms are preserved. The Additional Use Grant in the parameter
+section specifies the additional permission for production use.
 
-- 允许个人非商业自用，以及非商业 Minecraft 服务器的生产使用。实际管理运行中的 Minecraft 服务器属于生产使用。
-- 允许无任何回报的自愿捐赠；捐赠者不能因此获得物品、服务、入服资格、特权或其他利益。
-- 售卖道具、会员、入服资格、广告或取得其他经营收入的服务器，以及企业、经营和其他商业使用，须另获授权。
-- 对外提供托管或代运维服务，无论是否收费，均须另获授权。
-- BUSL 正文授予的非生产复制、修改、衍生和再分发权限不因这些生产使用条件而缩减；须遵守完整许可。
+- Personal, non-commercial use and production operation of non-commercial
+  Minecraft servers are allowed. Managing live Minecraft servers is production use.
+- Voluntary donations are allowed only without any goods, services, admission,
+  privileges or other benefits in return.
+- Servers earning revenue from items, memberships, admission, advertising or
+  other business activities require separate authorization, as do enterprise,
+  business and other commercial uses.
+- Hosting or managed services for third parties require separate authorization,
+  whether or not a fee is charged.
+- These production-use conditions do not restrict the copying, modification,
+  derivative-work and redistribution rights for non-production use granted by
+  the BUSL terms. The complete license must be followed.
 
-每个版本自首次以 BUSL 公开分发起四年后，独立转为 [Apache-2.0](LICENSES/Apache-2.0.txt)，届时该版本不再受上述商业使用限制。新版本不重置旧版本期限；发布时应记录版本、首次公开分发日期及相应转换日期，不得通过重新发布延后转换。当前尚无产品版本发布记录，本次许可说明不虚构发布日期。
+Each version independently converts to [Apache-2.0](LICENSES/Apache-2.0.txt)
+on the fourth anniversary of its first public distribution under BUSL. The
+commercial-use restrictions above then cease to apply to that version. A new
+release does not restart an older version's period. Releases should record the
+version, first public distribution date and corresponding conversion date;
+redistribution must not postpone conversion. This notice does not invent a
+release date where no product release record has been specified.
 
-## 授权申请与第三方内容
+## Authorization requests and third-party content
 
-商业使用或专有部分授权申请请提交至 [本仓库 GitHub Issues](https://github.com/Nexa-MC/NexaSM/issues)，说明所需用途及范围；不要在公开 Issue 中填写敏感信息。提交申请不等于取得授权，须获得许可方的另行明确授权。
+Request commercial or proprietary authorization through
+[this repository's GitHub Issues](https://github.com/Nexa-MC/NexaSM/issues),
+describing the intended use and scope. Do not include sensitive information in
+public issues. Filing a request does not grant permission; separate, express
+authorization from the Licensor is required.
 
-第三方内容依其各自许可，不因本项目许可而重新授权。根目录 LICENSE、适用的专有许可及另行签订的授权文件规定具体权利义务；本页为说明。
+Third-party content retains its own licenses and is not relicensed by this
+project. The root LICENSE, any applicable proprietary license and separately
+agreed authorization documents govern the rights and obligations. This page
+and its Simplified Chinese version are explanatory; the English license texts
+govern if a translation differs.
